@@ -1,0 +1,83 @@
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe.config
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.pdb
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.dll
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.pdb
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.xml
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Form1.resources
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Properties.Resources.resources
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csproj.GenerateResource.Cache
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.exe
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.pdb
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.dll
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.pdb
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.xml
+c:\_vbn\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csprojResolveAssemblyReference.cache
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe.config
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.exe
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.pdb
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.pdb
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.dll
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.dll
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.pdb
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.xml
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.pdb
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.xml
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csprojResolveAssemblyReference.cache
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Form1.resources
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Properties.Resources.resources
+C:\Users\ALUNOS\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csproj.GenerateResource.Cache
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe.config
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.exe
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.pdb
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.pdb
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.dll
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.dll
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.pdb
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.xml
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.pdb
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.xml
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csprojResolveAssemblyReference.cache
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Form1.resources
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Properties.Resources.resources
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csproj.GenerateResource.Cache
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Login.resources
+C:\Users\ALUNOS\Desktop\Nova pasta\Gerando_QRCode\Gerando_QRCode\bin\Debug\mysql.data.dll
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe.config
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.exe
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.pdb
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.cadastroFuncionario.resources
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Form1.resources
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Login.resources
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Properties.Resources.resources
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csproj.GenerateResource.Cache
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.pdb
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\mysql.data.dll
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.dll
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.dll
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.pdb
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.xml
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.pdb
+C:\Users\aluno\Desktop\Trab\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.xml
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe.config
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.exe
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.pdb
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.exe
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\Gerando_QRCode.pdb
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\mysql.data.dll
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.dll
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.dll
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.pdb
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.xml
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.pdb
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\bin\Debug\zxing.presentation.xml
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.cadastroFuncionario.resources
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Form1.resources
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Login.resources
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.Properties.Resources.resources
+C:\Users\aluno\Desktop\Gerando_QRCode\Gerando_QRCode\obj\Debug\Gerando_QRCode.csproj.GenerateResource.Cache
