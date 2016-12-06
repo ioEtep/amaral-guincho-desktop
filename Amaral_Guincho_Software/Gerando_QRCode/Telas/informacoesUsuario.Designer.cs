@@ -60,12 +60,18 @@
             this.tlBtTelaQrCode = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tlBtBackup = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtCargo);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.mskTelefone);
             this.groupBox1.Controls.Add(this.mskCpf);
             this.groupBox1.Controls.Add(this.mskCep);
@@ -101,31 +107,31 @@
             // 
             // mskTelefone
             // 
-            this.mskTelefone.Location = new System.Drawing.Point(82, 130);
-            this.mskTelefone.Mask = "(  )0000-0000";
+            this.mskTelefone.Location = new System.Drawing.Point(82, 120);
+            this.mskTelefone.Mask = "(99)9999-9999";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(116, 20);
             this.mskTelefone.TabIndex = 29;
             // 
             // mskCpf
             // 
-            this.mskCpf.Location = new System.Drawing.Point(235, 88);
-            this.mskCpf.Mask = "000.000.000-00";
+            this.mskCpf.Location = new System.Drawing.Point(235, 78);
+            this.mskCpf.Mask = "999,999,999-99";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(130, 20);
             this.mskCpf.TabIndex = 28;
             // 
             // mskCep
             // 
-            this.mskCep.Location = new System.Drawing.Point(60, 88);
-            this.mskCep.Mask = "00000-000";
+            this.mskCep.Location = new System.Drawing.Point(60, 78);
+            this.mskCep.Mask = "99,999-999";
             this.mskCep.Name = "mskCep";
             this.mskCep.Size = new System.Drawing.Size(130, 20);
             this.mskCep.TabIndex = 27;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(397, 169);
+            this.txtCidade.Location = new System.Drawing.Point(397, 159);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(142, 20);
             this.txtCidade.TabIndex = 25;
@@ -133,7 +139,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(345, 172);
+            this.label14.Location = new System.Drawing.Point(345, 162);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(46, 13);
             this.label14.TabIndex = 24;
@@ -141,7 +147,7 @@
             // 
             // txtUf
             // 
-            this.txtUf.Location = new System.Drawing.Point(280, 169);
+            this.txtUf.Location = new System.Drawing.Point(280, 159);
             this.txtUf.Name = "txtUf";
             this.txtUf.Size = new System.Drawing.Size(42, 20);
             this.txtUf.TabIndex = 23;
@@ -149,7 +155,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(250, 172);
+            this.label13.Location = new System.Drawing.Point(250, 162);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(24, 13);
             this.label13.TabIndex = 22;
@@ -157,7 +163,7 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(71, 169);
+            this.txtBairro.Location = new System.Drawing.Point(71, 159);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(158, 20);
             this.txtBairro.TabIndex = 21;
@@ -165,7 +171,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(25, 172);
+            this.label12.Location = new System.Drawing.Point(25, 162);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 20;
@@ -173,7 +179,7 @@
             // 
             // txtResidencia
             // 
-            this.txtResidencia.Location = new System.Drawing.Point(487, 130);
+            this.txtResidencia.Location = new System.Drawing.Point(487, 120);
             this.txtResidencia.Name = "txtResidencia";
             this.txtResidencia.Size = new System.Drawing.Size(134, 20);
             this.txtResidencia.TabIndex = 19;
@@ -181,7 +187,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(415, 133);
+            this.label11.Location = new System.Drawing.Point(415, 123);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(66, 13);
             this.label11.TabIndex = 18;
@@ -189,7 +195,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(248, 130);
+            this.txtEmail.Location = new System.Drawing.Point(248, 120);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(149, 20);
             this.txtEmail.TabIndex = 17;
@@ -197,7 +203,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(204, 133);
+            this.label10.Location = new System.Drawing.Point(204, 123);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(38, 13);
             this.label10.TabIndex = 16;
@@ -206,7 +212,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 133);
+            this.label9.Location = new System.Drawing.Point(21, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 13);
             this.label9.TabIndex = 14;
@@ -214,7 +220,7 @@
             // 
             // txtSexo
             // 
-            this.txtSexo.Location = new System.Drawing.Point(642, 88);
+            this.txtSexo.Location = new System.Drawing.Point(642, 66);
             this.txtSexo.Name = "txtSexo";
             this.txtSexo.Size = new System.Drawing.Size(33, 20);
             this.txtSexo.TabIndex = 13;
@@ -222,7 +228,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(599, 91);
+            this.label8.Location = new System.Drawing.Point(599, 81);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 12;
@@ -230,7 +236,7 @@
             // 
             // mskDataContratacao
             // 
-            this.mskDataContratacao.Location = new System.Drawing.Point(489, 88);
+            this.mskDataContratacao.Location = new System.Drawing.Point(489, 78);
             this.mskDataContratacao.Mask = "00/00/0000";
             this.mskDataContratacao.Name = "mskDataContratacao";
             this.mskDataContratacao.Size = new System.Drawing.Size(100, 20);
@@ -240,7 +246,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(371, 91);
+            this.label7.Location = new System.Drawing.Point(371, 81);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 13);
             this.label7.TabIndex = 10;
@@ -249,7 +255,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(200, 91);
+            this.label6.Location = new System.Drawing.Point(200, 81);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 8;
@@ -258,7 +264,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 91);
+            this.label5.Location = new System.Drawing.Point(22, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 6;
@@ -266,7 +272,7 @@
             // 
             // mskDataNascimento
             // 
-            this.mskDataNascimento.Location = new System.Drawing.Point(602, 48);
+            this.mskDataNascimento.Location = new System.Drawing.Point(602, 38);
             this.mskDataNascimento.Mask = "00/00/0000";
             this.mskDataNascimento.Name = "mskDataNascimento";
             this.mskDataNascimento.Size = new System.Drawing.Size(100, 20);
@@ -276,7 +282,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(486, 51);
+            this.label4.Location = new System.Drawing.Point(486, 41);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 4;
@@ -284,7 +290,7 @@
             // 
             // txtSobrenome
             // 
-            this.txtSobrenome.Location = new System.Drawing.Point(328, 48);
+            this.txtSobrenome.Location = new System.Drawing.Point(328, 38);
             this.txtSobrenome.Name = "txtSobrenome";
             this.txtSobrenome.Size = new System.Drawing.Size(141, 20);
             this.txtSobrenome.TabIndex = 3;
@@ -292,7 +298,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 51);
+            this.label3.Location = new System.Drawing.Point(255, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 2;
@@ -300,7 +306,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(69, 48);
+            this.txtNome.Location = new System.Drawing.Point(69, 38);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(176, 20);
             this.txtNome.TabIndex = 1;
@@ -308,7 +314,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 51);
+            this.label2.Location = new System.Drawing.Point(22, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 0;
@@ -319,7 +325,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tlBtTelaQrCode,
             this.toolStripSeparator1,
-            this.tlBtBackup});
+            this.tlBtBackup,
+            this.toolStripSeparator2,
+            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(741, 25);
@@ -351,6 +359,37 @@
             this.tlBtBackup.Text = "Backup";
             this.tlBtBackup.Click += new System.EventHandler(this.tlBtBackup_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(554, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Cargo :";
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Location = new System.Drawing.Point(601, 159);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(110, 20);
+            this.txtCargo.TabIndex = 35;
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(60, 22);
+            this.toolStripButton1.Text = "Auditoria";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // informacoesUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,6 +399,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "informacoesUsuario";
             this.Text = "informacoesUsuario";
+            this.Load += new System.EventHandler(this.informacoesUsuario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -402,5 +442,9 @@
         private System.Windows.Forms.ToolStripButton tlBtTelaQrCode;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton tlBtBackup;
+        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

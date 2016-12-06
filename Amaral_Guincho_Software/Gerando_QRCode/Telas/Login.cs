@@ -14,6 +14,7 @@ namespace Amaral_Guincho_Software
     {
         int tentativas;
         acessoLogin login = new acessoLogin();
+        acessoFuncionário func = new acessoFuncionário();
 
         public Login()
         {
@@ -30,51 +31,35 @@ namespace Amaral_Guincho_Software
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtLogin.Text == String.Empty || txtSenha.Text == String.Empty)
-                {
+            {
                 tentativas++;
-                    MessageBox.Show("Preencher todos os campos", "Erro!", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Preencher todos os campos", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-            if (txtLogin.Text == String.Empty)
+                if (txtLogin.Text == String.Empty)
                 {
                     txtLogin.BackColor = Color.Red;
                     txtLogin.Focus();
                 }
-            if(txtSenha.Text == String.Empty)
+                if (txtSenha.Text == String.Empty)
                 {
                     txtSenha.BackColor = Color.Red;
                     txtSenha.Focus();
                 }
 
-                if (tentativas >= 3)
-                {
-                    lblPerguntaSecreta.Visible = true;
-                    txtPerguntaSecreta.Visible = true;
-                    txtPerguntaSecreta.Enabled = true;
-
-                    if (txtPerguntaSecreta.Text == string.Empty && txtPerguntaSecreta.Visible == true)
-                    {
-                        MessageBox.Show("Preencher todos os campos", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        if(txtPerguntaSecreta.Text == String.Empty)
-                        {
-                            txtPerguntaSecreta.BackColor = Color.Red;
-                        }
-
-                    }
-                    else
-                    {
-                        login.pesquisarId(txtLogin.Text);
-                        this.Visible = false;
-                        Form1 fr1 = new Form1();
-                        fr1.ShowDialog();
-                    }
-
-                }
-
-            } else
+            }
+            else
             {
-                login.pesquisarId(txtLogin.Text);
+                login.pesquisarId(txtLogin.Text, txtSenha.Text);
+
+
+
+                Classes.funcLogado.Email_logado = txtLogin.Text;
+                Classes.funcLogado.Password_logado = txtSenha.Text;
+
+                Classes.funcLogado.pesqId(txtLogin.Text);
+
+
                 this.Visible = false;
                 Form1 fr1 = new Form1();
                 fr1.ShowDialog();
@@ -82,20 +67,11 @@ namespace Amaral_Guincho_Software
 
         }
 
-        private void btnHack_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form1 fr1 = new Form1();
-            fr1.ShowDialog();
-        }
-
         private void Login_Load(object sender, EventArgs e)
         {
-
+            Conexao.criar_Conexao();
         }
+
     }
-}
+    }
+

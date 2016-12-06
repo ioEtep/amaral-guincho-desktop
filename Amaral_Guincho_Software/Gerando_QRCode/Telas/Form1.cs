@@ -17,6 +17,7 @@ namespace Amaral_Guincho_Software
 
         Criptografia cripto = new Criptografia("ETEP");
         String texto;
+        Acessos.acessoAuditoria audit = new Acessos.acessoAuditoria();
 
         public Form1()
         {
@@ -42,6 +43,7 @@ namespace Amaral_Guincho_Software
                 int altura = Convert.ToInt32(txtAltura.Text);
                 
                 picQRCode.Image = GerarQRCode(largura, altura, texto);
+                audit.inserir(Classes.funcLogado.Id_func, "GerarQRcode", DateTime.Now.ToString());
 
             }
             catch(Exception ex)
@@ -82,6 +84,13 @@ namespace Amaral_Guincho_Software
             this.Visible = false;
             Telas.informacoesUsuario usu = new Telas.informacoesUsuario();
             usu.ShowDialog();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Telas.Auditoria au = new Telas.Auditoria();
+            au.ShowDialog();
         }
     }
 }

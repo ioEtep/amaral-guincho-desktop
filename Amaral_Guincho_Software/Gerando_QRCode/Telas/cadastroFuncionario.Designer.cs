@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.vlCEP = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.mskCpf = new System.Windows.Forms.MaskedTextBox();
@@ -57,12 +58,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.vlCEP = new System.Windows.Forms.Label();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.cmbCargo);
             this.groupBox1.Controls.Add(this.vlCEP);
             this.groupBox1.Controls.Add(this.btnVoltar);
             this.groupBox1.Controls.Add(this.mskTelefone);
@@ -100,6 +104,15 @@
             this.groupBox1.Text = "Informações";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // vlCEP
+            // 
+            this.vlCEP.AutoSize = true;
+            this.vlCEP.Location = new System.Drawing.Point(175, 59);
+            this.vlCEP.Name = "vlCEP";
+            this.vlCEP.Size = new System.Drawing.Size(11, 13);
+            this.vlCEP.TabIndex = 31;
+            this.vlCEP.Text = "*";
+            // 
             // btnVoltar
             // 
             this.btnVoltar.Location = new System.Drawing.Point(588, 197);
@@ -113,7 +126,7 @@
             // mskTelefone
             // 
             this.mskTelefone.Location = new System.Drawing.Point(67, 99);
-            this.mskTelefone.Mask = "(  )0000-0000";
+            this.mskTelefone.Mask = "(99)9999-9999";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(116, 20);
             this.mskTelefone.TabIndex = 29;
@@ -121,7 +134,7 @@
             // mskCpf
             // 
             this.mskCpf.Location = new System.Drawing.Point(220, 57);
-            this.mskCpf.Mask = "000.000.000-00";
+            this.mskCpf.Mask = "999,999,999-99";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(130, 20);
             this.mskCpf.TabIndex = 28;
@@ -129,7 +142,7 @@
             // mskCep
             // 
             this.mskCep.Location = new System.Drawing.Point(45, 57);
-            this.mskCep.Mask = "00.000-000";
+            this.mskCep.Mask = "99,999-999";
             this.mskCep.Name = "mskCep";
             this.mskCep.Size = new System.Drawing.Size(130, 20);
             this.mskCep.TabIndex = 27;
@@ -336,14 +349,28 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Nome :";
             // 
-            // vlCEP
+            // cmbCargo
             // 
-            this.vlCEP.AutoSize = true;
-            this.vlCEP.Location = new System.Drawing.Point(175, 59);
-            this.vlCEP.Name = "vlCEP";
-            this.vlCEP.Size = new System.Drawing.Size(11, 13);
-            this.vlCEP.TabIndex = 31;
-            this.vlCEP.Text = "*";
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Items.AddRange(new object[] {
+            "Administrador",
+            "Secretaria",
+            "Motorista",
+            "outro"});
+            this.cmbCargo.Location = new System.Drawing.Point(54, 179);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(160, 21);
+            this.cmbCargo.TabIndex = 32;
+            this.cmbCargo.SelectedIndexChanged += new System.EventHandler(this.cmbCargo_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 182);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Cargo :";
             // 
             // cadastroFuncionario
             // 
@@ -354,6 +381,7 @@
             this.Name = "cadastroFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cadastroFuncionario";
+            this.Load += new System.EventHandler(this.cadastroFuncionario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -392,5 +420,7 @@
         private System.Windows.Forms.MaskedTextBox mskTelefone;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label vlCEP;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbCargo;
     }
 }

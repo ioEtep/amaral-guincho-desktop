@@ -80,10 +80,11 @@ namespace Amaral_Guincho_Software
             comando_sql.Fill(tabela_memoria);
         }
 
-        public Boolean pesquisarId(String pesq)
+        public Boolean pesquisarId(String User, String Pass)
         {
-            cripto.Encrypt(pesq);
-            carregar_tabela("Select * from login l inner join funcionario f on l.id_func = f.id_func where username_login = '" + pesq + "' ");
+            cripto.Encrypt(User);
+            cripto.Encrypt(Pass);
+            carregar_tabela("Select * from login l inner join funcionario f on l.id_func = f.id_func where username_login = '" + User + "' and password_login = '"+Pass+"' ");
 
             try
             {
@@ -95,5 +96,29 @@ namespace Amaral_Guincho_Software
             }
             catch { return false; }
         }
+
+        public void inserir(String User, String password)
+        {
+            cripto.Encrypt(User);
+            cripto.Encrypt(password);
+
+            carregar_tabela("insert into login values(0, '" + User + "','" + password + "', 7);");
+        }
+
+        public bool pesqLog(String codFuncionario)
+        {
+            carregar_tabela("select * from login l inner join funcionario f on l.id_func = f.id_func where l.id_func = '" + codFuncionario + "'");
+
+            try
+            {
+                Id_login = Convert.ToInt32(tabela_memoria.Rows[0]["id_login"].ToString());
+                Username_login = cripto.Decrypt(tabela_memoria.Rows[0]["username_login"].ToString());
+                Password_login = cripto.Decrypt(tabela_memoria.Rows[0]["password_login"].ToString());
+                Id_func = Convert.ToInt32(tabela_memoria.Rows[0]["id_func"].ToString());
+                return true;
+            } catch { return false; }
+
+        }
+
     }
 }

@@ -16,6 +16,9 @@ namespace Amaral_Guincho_Software.Telas
 {
     public partial class telaBackup : Form
     {
+        Acessos.acessoAuditoria audit = new Acessos.acessoAuditoria();
+        
+
         public telaBackup()
         {
             InitializeComponent();
@@ -35,6 +38,9 @@ namespace Amaral_Guincho_Software.Telas
                 //corre uma thread com o processo que faz o backup ou restore
                 Thread t = new Thread(delegate () { MySqlProcess(path); });
                 t.Start();
+
+                audit.inserir(Classes.funcLogado.Id_func, "Fez Backup", DateTime.Now.ToString());
+                
                 MessageBox.Show("Backup realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
@@ -93,6 +99,9 @@ namespace Amaral_Guincho_Software.Telas
                 //corre uma thread com o processo que faz o backup ou restore
                 Thread t = new Thread(delegate () { MySqlProcess(path); });
                 t.Start();
+
+                audit.inserir(Classes.funcLogado.Id_func, "Restaurou Backup", DateTime.Now.ToString());
+
                 MessageBox.Show("Backup restaurado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
@@ -113,6 +122,13 @@ namespace Amaral_Guincho_Software.Telas
             this.Visible = false;
             Form1 fr1 = new Form1();
             fr1.ShowDialog();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Telas.Auditoria au = new Telas.Auditoria();
+            au.ShowDialog();
         }
     }
 }

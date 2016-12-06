@@ -42,7 +42,7 @@ namespace Amaral_Guincho_Software
             MySqlDataReader banco = null;
 
             // fazer uso do banco escolhido
-            MySqlCommand usar = new MySqlCommand("use amaralguincho", conectar);
+            MySqlCommand usar = new MySqlCommand("use agencrypted", conectar);
 
             // tenta criar o banco
             try

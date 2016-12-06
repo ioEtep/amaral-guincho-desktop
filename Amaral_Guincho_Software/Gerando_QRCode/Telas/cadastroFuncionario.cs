@@ -15,11 +15,38 @@ namespace Amaral_Guincho_Software
         String password;
         String nome, sobrenome, dataNasc, cep, cpf, dataCont, sx, tel, email ,residencia;
         String bairro, uf, cid;
+        int cargo;
+
+        private void cadastroFuncionario_Load(object sender, EventArgs e)
+        {
+            Conexao.criar_Conexao();
+        }
+
+        private void cmbCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cmbCargo.Text == "Administrador")
+            {
+                cargo = 1;
+            }
+            if(cmbCargo.Text == "Secretaria")
+            {
+                cargo = 2;
+            }
+            if(cmbCargo.Text == "Motorista")
+            {
+                cargo = 3;
+            }
+            if(cmbCargo.Text == "outro")
+            {
+                cargo = 4;
+            }
+        }
 
         acessoFuncionário func = new acessoFuncionário();
         SenhaAleatoria senha = new SenhaAleatoria();
+        acessoLogin login = new acessoLogin();
         acessoCEP CEP = new acessoCEP();
-        Email em = new Email();
+        Email emai = new Email();
 
 
         public cadastroFuncionario()
@@ -73,8 +100,6 @@ namespace Amaral_Guincho_Software
         #endregion
         private void btnCadastrar_Click(object sender, EventArgs e)
         { 
-            try
-            {
                 #region Validation
 
                 foreach (object obj in this.Controls)
@@ -90,7 +115,7 @@ namespace Amaral_Guincho_Software
 
                 cpf = mskCpf.Text;
 
-                #region CPF
+          /*     #region CPF
 
                 if(!Validation.ValidateCPF(cpf))
                 {
@@ -98,7 +123,7 @@ namespace Amaral_Guincho_Software
                     return;
                 }
 
-                #endregion
+                #endregion*/
 
                 email = txtEmail.Text;
 
@@ -122,29 +147,56 @@ namespace Amaral_Guincho_Software
                 }
                 catch
                 {
-                    MessageBox.Show("Data incorreta");
+                    MessageBox.Show("Data de nascimento incorreta");
                     return;
                 }
                 if(Convert.ToDateTime(dataNasc) > DateTime.Today)
                 {
-                    MessageBox.Show("Data inválida");
+                    MessageBox.Show("Data de nascimento inválida");
                     return;
                 }
+                #endregion
+
+                dataCont = mskDataContratacao.Text;
+
+                #region Data Contratação
+
+                try
+                {
+                    Convert.ToDateTime(dataCont);
+                }
+                catch
+                {
+                    MessageBox.Show("Data de contratação incorreta");
+                    return;
+                }
+                if(Convert.ToDateTime(dataCont) > DateTime.Today)
+                {
+                    MessageBox.Show("Data de Contratação inválida");
+                    return;
+                }
+
                 #endregion
 
                 password = senha.CreatePassword(5);
 
                 nome = txtNome.Text;
+                sobrenome = txtSobrenome.Text;
                 cep = mskCep.Text;
+                sx = txtSexo.Text;
+                tel = mskTelefone.Text;
+                residencia = txtResidencia.Text;
+                bairro = txtBairro.Text;
+                uf = txtUf.Text;
+                cid = txtCidade.Text;
+
+                func.inserir(cargo, nome, sobrenome, dataNasc, cep, cpf, dataCont, sx, tel, email, residencia, bairro, uf, cid);
+                login.inserir(email, password);
+                Email.sendNewCadFunc(txtEmail.Text, txtNome.Text, email, password);
+                MessageBox.Show("Funcionario Cadastrado");
                 
 
-
-            }
-            catch
-            {
-                MessageBox.Show("Erro ao cadastrar o funcionário");
-            }
-
+                
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

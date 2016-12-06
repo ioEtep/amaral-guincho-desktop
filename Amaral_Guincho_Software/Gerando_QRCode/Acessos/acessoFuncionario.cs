@@ -223,7 +223,7 @@ namespace Amaral_Guincho_Software
             comando_sql.Fill(tabela_memoria);
         }
 
-        public void inserir(String nome, String sobrenome, String dtnasc , String cep, String cpf, String dtcont, String sx, String tel, String email, String residencia, String bairro, String uf, String cid)
+        public void inserir(int cargo ,String nome, String sobrenome, String dtnasc , String cep, String cpf, String dtcont, String sx, String tel, String email, String residencia, String bairro, String uf, String cid)
         {
             nome = cripto.Encrypt(nome);
             sobrenome = cripto.Encrypt(sobrenome);
@@ -240,17 +240,47 @@ namespace Amaral_Guincho_Software
             cid = cripto.Encrypt(cid);
 
 
-            carregar_tabela("INSERT INTO FUNCIONARIO VALUES(0,'" + nome + "', '" + sobrenome + "', '" + dtnasc + "', '" + cep + "', '" + cpf + "', '" + dtcont + "', '" + sx + "', '" + tel + "', '"+email+"', '"+residencia+"', '"+bairro+"', '"+uf+"', '"+cid+"',null");
-
-        }
-        public void logar(String usuario, String senha)
-        {
-            usuario = cripto.Encrypt(usuario);
-            senha = cripto.Encrypt(senha);
-            //carregar_tabela("select * from funcionario where")
+            carregar_tabela("INSERT INTO funcionario VALUES(0,'"+cargo+"' ,'" + nome + "', '" + sobrenome + "', '" + dtnasc + "', '" + cep + "', '" + cpf + "', '" + dtcont + "', '" + sx + "', '" + tel + "', '" + email + "', '" + residencia + "', '" + bairro + "', '" + uf + "', '" + cid + "',null);");
 
         }
     
 
+        public bool pesqFunc (String codFuncionario)
+        {
+            carregar_tabela("Select * from funcionario f, cargo c where c.id_cargo = f.id_cargo and f.id_func = '"+codFuncionario+"'");
+
+            try
+            {
+
+                Id_func = Convert.ToInt32(tabela_memoria.Rows[0]["id_func"].ToString());
+                Id_cargo = Convert.ToInt32(tabela_memoria.Rows[0]["id_cargo"].ToString());
+                Nome_func = cripto.Decrypt(tabela_memoria.Rows[0]["nome_func"].ToString());
+                Sobrenome_func = cripto.Decrypt(tabela_memoria.Rows[0]["sobrenome_func"].ToString());
+                Dtnasc_func = Convert.ToDateTime(cripto.Decrypt(tabela_memoria.Rows[0]["dtnasc_func"].ToString()));
+                Cep_func = cripto.Decrypt(tabela_memoria.Rows[0]["cep_func"].ToString());
+                Dtcont_func = Convert.ToDateTime(cripto.Decrypt(tabela_memoria.Rows[0]["dtcont_func"].ToString()));
+                Sx_func = cripto.Decrypt(tabela_memoria.Rows[0]["sx_func"].ToString());
+                Tel_func = cripto.Decrypt(tabela_memoria.Rows[0]["tel_func"].ToString());
+                Email_func = cripto.Decrypt(tabela_memoria.Rows[0]["email_func"].ToString());
+                Residencia_func = cripto.Decrypt(tabela_memoria.Rows[0]["residencia_func"].ToString());
+                Bairro_func = cripto.Decrypt(tabela_memoria.Rows[0]["bairro_func"].ToString());
+                Uf_func = cripto.Decrypt(tabela_memoria.Rows[0]["uf_func"].ToString());
+                Cid_func = cripto.Decrypt(tabela_memoria.Rows[0]["cid_func"].ToString());
+                return true;
+            } catch { return false; }
+
+        }
+
+        public bool pesqId(String email)
+        {
+            carregar_tabela("Select id_func from funcionario where email_func'" + email + "'");
+
+            try
+            {
+                id_func = Convert.ToInt32(tabela_memoria.Rows[0]["id_func"].ToString());
+                return true;
+            } catch { return false; }
+
+        }
     }
 }

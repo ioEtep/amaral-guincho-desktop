@@ -62,8 +62,8 @@ namespace Amaral_Guincho_Software
 
         public static void fechar()
         {
-            conectar.Close();
-            banco.Close();
+         ///   conectar.Close();
+          ///  banco.Close();
         }
 
     }

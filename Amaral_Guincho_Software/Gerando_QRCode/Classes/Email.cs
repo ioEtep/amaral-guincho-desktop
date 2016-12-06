@@ -12,7 +12,7 @@ public class Email
 {
     public static void sendEmail(String Destinatario, String Nome, String Assunto, String Conteudo)
     {
-        string remetenteEmail = "suporte.yonetim@gmail.com"; //O e-mail do remetente
+        string remetenteEmail = "garagemAmaral@gmail.com"; //O e-mail do remetente
 
         MailMessage mail = new MailMessage();
 
@@ -37,7 +37,7 @@ public class Email
 
         SmtpClient client = new SmtpClient();  //Adicionando as credenciais do seu e-mail e senha:
 
-        client.Credentials = new System.Net.NetworkCredential(remetenteEmail, "senhaobvia");
+        client.Credentials = new System.Net.NetworkCredential(remetenteEmail, "josephaAmaralCaio");
 
 
 
@@ -55,34 +55,34 @@ public class Email
 
     public static void sendNewCad(String Destinatario, String NomeCadastro, String Usuario, String Senha)
     {
-        sendEmail(Destinatario, "Yönetim", "Yönetim - Conta Criada com Sucesso",
-            "<img src='https://pbs.twimg.com/media/CQK6VlQWIAEaeW4.png' /><hr />" +
-            "A Yönetim agradece por seu cadastro.<br />Boas Compras!<br /><br />" +
+        sendEmail(Destinatario, "Amaral Guincho", "Amaral Guincho - Conta Criada com Sucesso",
+            
+            "A Amaral Guincho agradece por seu cadastro.<br /><br /><br />" +
             "<b>" + NomeCadastro +
                                             "</b><hr /><br /><b>Seus dados para login são:</b> " +
                                             "<br /><b>Login:</b> " + Usuario +
                                             "<br /><b>Senha:</b> " + Senha +
-                                            "<br /><hr /><br />Atenciosamente, Yönetim.");
+                                            "<br /><hr /><br />Atenciosamente, Amaral Guincho.");
     }
 
     public static void sendForgotPass(String Destinatario, String nome, String login, String senha)
     {
-        sendEmail(Destinatario, "Yönetim", "Yönetim - Esqueceu a Senha",
-            "<img src='https://pbs.twimg.com/media/CQK6VlQWIAEaeW4.png' /><hr />" +
+        sendEmail(Destinatario, "Amaral Guincho", "Amaral Guincho - Esqueceu a Senha",
+            "<img src='' /><hr />" +
             "Prezado usuario <i>" + nome +
             "</i><br /><br />Login: <b>" + login +
-            "</b><br />Senha: <b>" + senha + "</b><br /><br /><br />Atenciosamente, Yönetim.");
+            "</b><br />Senha: <b>" + senha + "</b><br /><br /><br />Atenciosamente, Amaral Guincho.");
     }
 
     public static void sendNewCadFunc(String Destinatario, String NomeCadastro, String Usuario, String Senha)
     {
-        sendEmail(Destinatario, "Yönetim", "Yönetim - Conta Criada com Sucesso",
-            "<img src='https://pbs.twimg.com/media/CQK6VlQWIAEaeW4.png' /><hr />" +
+        sendEmail(Destinatario, "Amaral Guincho", "Amaral Guincho - Conta Criada com Sucesso",
+            "<img src='' /><hr />" +
             "Seja Bem vindo a empresa.<br /><br />" +
             "<b>" + NomeCadastro +
                                             "</b><hr /><br /><b>Seus dados para login como funcionário são:</b> " +
                                             "<br /><b>Usuário:</b> " + Usuario +
                                             "<br /><b>Senha:</b> " + Senha +
-                                            "<br /><hr /><br />Atenciosamente, Yönetim.");
+                                            "<br /><hr /><br />Atenciosamente, Amaral Guincho.");
     }
 }
